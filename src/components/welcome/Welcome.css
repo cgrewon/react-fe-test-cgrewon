@@ -1,0 +1,202 @@
+.welcome-container {
+  /* background: blue; */
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  background: linear-gradient(0deg, #f6f2ff, #f6f2ff), #fbfaff;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1170px;
+  height: 100%;
+  width: calc(100vw - 100px);
+  min-height: 835px;
+
+  margin: auto;
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.main-title {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+  /* or 100% */
+
+  text-align: right;
+
+  color: #240d57;
+  margin-bottom: 18px;
+}
+
+.snapchat-brand {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 74px;
+  /* identical to box height */
+
+  text-align: right;
+
+  background: linear-gradient(90deg, #8456ec 24.2%, #f87bd9 120.46%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+p {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: right;
+
+  color: #4f4f4f;
+  margin: 0;
+}
+
+.btn-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0;
+  gap: 10px;
+  text-decoration: none;
+  width: 320px;
+
+  background: linear-gradient(90deg, #8456ec 3.25%, #e87bf8 100%);
+  border-radius: 10px;
+
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  /* identical to box height */
+
+  text-align: right;
+
+  color: #ffffff;
+
+  margin-top: 52px;
+}
+
+.btn-create-left {
+  display: none;
+}
+
+.left-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 960px) {
+  .main-container {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    height: fit-content;
+    padding-bottom: 80px;
+    padding-top: 80px;
+  }
+
+  .main-title {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+
+  .right-container {
+    align-items: center;
+  }
+  .btn-create-right {
+    display: none;
+  }
+  .btn-create-left {
+    display: inherit;
+  }
+  .btn-main {
+    width: 310px;
+  }
+  .left-container img {
+    margin-top: 50px;
+    width: 310px;
+  }
+}
+
+@media (max-width: 520px) {
+  .main-title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 45px;
+  }
+  .snapchat-brand {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 45px;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 410px) {
+  .main-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .snapchat-brand {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .left-container img {
+    margin-top: 50px;
+    width: 165px;
+  }
+
+  .main-container {
+    min-height: 0;
+    padding-top: 50px;
+    width: 100%;
+  }
+
+  .btn-main {
+    width: 180px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
