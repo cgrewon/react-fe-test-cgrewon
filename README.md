@@ -2,6 +2,8 @@
 
 Author: cgrewon (zhengyunxm@gmail.com)
 
+This is for test purpose project for frontend developer.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Here is live [demo](https://react-fe-test-cgrewon-hjhq.vercel.app/).
